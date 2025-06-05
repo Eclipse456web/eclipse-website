@@ -89,4 +89,16 @@ nav {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.about-home {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+
+
 
