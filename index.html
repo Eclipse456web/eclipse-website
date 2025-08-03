@@ -10,16 +10,29 @@
 </head>
 <body>
   <header>
-    <nav>
+
+<nav class="responsive-nav">
+  <div class="nav-brand">
+    <button class="nav-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+  </div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="news.html">News</a></li>
     <li><a href="support.html">Support</a></li>
     <li><a href="characters.html">Characters</a></li>
     <li><a href="lore.html">Lore</a></li>
-
   </ul>
 </nav>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('show');
+  });
+</script>
 
   <h1>Eclipse Web</h1>
   <p>Welcome to the official game hub for all Eclipse titles, starting with Hack Eclipse.</p>

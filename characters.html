@@ -12,15 +12,29 @@
     <p>Cross-game custom characters. Share, showcase, and soon trade your unique builds.</p>
   </header>
 
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="characters.html">Characters</a></li>
-      <li><a href="lore.html">Lore</a></li>
-    </ul>
-  </nav>
+<nav class="responsive-nav">
+  <div class="nav-brand">
+    <button class="nav-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="characters.html">Characters</a></li>
+    <li><a href="lore.html">Lore</a></li>
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('show');
+  });
+</script>
+
 
   <main>
     <section class="intro">

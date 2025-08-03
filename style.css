@@ -213,6 +213,82 @@ nav {
   }
 }
 
+/* Responsive navigation */
+.responsive-nav {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e94560;
+}
+
+/* Hamburger toggle (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+  .responsive-nav {
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    gap: 0;
+    width: 200px;
+    display: none;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .nav-links a {
+    padding: 0.75rem 1rem;
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
 
 
 
